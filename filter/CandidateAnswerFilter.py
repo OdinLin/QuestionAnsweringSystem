@@ -3,7 +3,8 @@
 
 __author__ = 'odin-lin'
 
+from abc import ABCMeta, abstractmethod
+
 
 class CandidateAnswerFilter(object):
-    def __init__(self):
-        pass
+    pass
