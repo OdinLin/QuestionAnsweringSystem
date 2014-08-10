@@ -5,6 +5,11 @@ __author__ = 'odin-lin'
 
 from abc import ABCMeta, abstractmethod
 
+import model.CandidateAnswer
+import model.Question
 
-class CandidateAnswerFilter(object):
-    pass
+
+class CandidateAnswerFilter(metaclass=ABCMeta):
+    @abstractmethod
+    def filter(self, question, candiateanswer):
+        pass
